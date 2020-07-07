@@ -1,6 +1,6 @@
 # User login application
 
-This is a user login and registration app using React.js, Node.js, Express, Passport, MongoDB and some other packages.
+This is a user login and registration app using React.js, Node.js, Express.js, Passport.js and MongoDB cloud.
 
 
 ### Usage
