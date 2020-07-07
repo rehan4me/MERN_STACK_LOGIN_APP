@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+    backend:
+        container_name: login_server
+        build:
+            context: ./server
+            dockerfile: Dockerfile
+        image: login/login_server
+        ports: 
+            - "5000:5000"
+        volumes: 
+            - ./server:/usr/src/app
+    frontend:
+        container_name: login_client
+        build: 
+            context: ./client
+            dockerfile: Dockerfile
+        image: login/login_client
+        stdin_open: true
+        ports: 
+            - "3000:3000"
+        volumes: 
+            - ./client:/usr/src/app
